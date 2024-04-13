@@ -1,8 +1,7 @@
 FROM maven:3.8.1-jdk-11-slim AS build
 WORKDIR /app
-COPY pom.xml .
-COPY src ./src
-RUN mvn clean package
+COPY * /app
+RUN mvn clean install
 
 FROM tomcat:9.0-jdk11-openjdk-slim
 COPY --from=build /app/target/IndianPopulationGrowth.war /usr/local/tomcat/webapps/
