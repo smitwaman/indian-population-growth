@@ -10,8 +10,8 @@
     <version>0.1</version>
     <packaging>war</packaging>
     
-    <name>helloworld</name>
-    <description>Hello World Web Application</description>
+    <name>populationgrowth</name>
+    <description>populationgrowth Web Application</description>
     
     <properties>
         <!-- depgraph-maven-plugin version -->
